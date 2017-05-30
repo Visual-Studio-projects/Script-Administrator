@@ -1,0 +1,657 @@
+﻿<ribbon:RibbonWindow
+    x:Class="DocScript.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:properties="clr-namespace:DocScript.Properties"
+    xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+    x:Name="DocScript"
+    Width="975"
+    Height="415"
+    MinWidth="975"
+    MinHeight="415"
+    Closing="DocScript_Closing"
+    Icon="{StaticResource ApplicationIcon}"
+    ResizeMode="CanResizeWithGrip"
+    SizeToContent="Manual"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <RoutedUICommand x:Key="cmdFind" />
+        <RoutedUICommand x:Key="cmdFullScreen" />
+        <RoutedUICommand x:Key="cmdHelp" />
+        <RoutedUICommand x:Key="cmdRefresh" />
+        <RoutedUICommand x:Key="cmdSave" />
+        <RoutedUICommand x:Key="cmdCopy" />
+    </Window.Resources>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource cmdHelp}" Executed="mnuHowTo_Click" />
+        <CommandBinding Command="{StaticResource cmdFind}" Executed="btnSelectScriptFile_Click" />
+        <CommandBinding Command="{StaticResource cmdRefresh}" Executed="btnRefreshResults_Click" />
+        <CommandBinding Command="{StaticResource cmdSave}" Executed="btnSaveResults_Click" />
+        <CommandBinding Command="{StaticResource cmdCopy}" Executed="btnCopyCommandLine_Click" />
+        <CommandBinding Command="{StaticResource cmdFullScreen}" Executed="btnFullScreen_Click" />
+    </Window.CommandBindings>
+
+    <Window.InputBindings>
+        <KeyBinding Key="F1" Command="{StaticResource cmdHelp}" />
+        <KeyBinding Key="F3" Command="{StaticResource cmdFind}" />
+        <KeyBinding Key="F5" Command="{StaticResource cmdRefresh}" />
+        <KeyBinding Key="F7" Command="{StaticResource cmdCopy}" />
+        <KeyBinding Key="F10" Command="{StaticResource cmdSave}" />
+        <KeyBinding Key="F11" Command="{StaticResource cmdFullScreen}" />
+    </Window.InputBindings>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ribbon:Ribbon
+            x:Name="Script"
+            Grid.Row="0"
+            Width="Auto"
+            Height="Auto"
+            DockPanel.Dock="Top"
+            ShowQuickAccessToolBarOnTop="False">
+
+            <ribbon:Ribbon.QuickAccessToolBar>
+                <ribbon:RibbonQuickAccessToolBar Height="25">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <ribbon:RibbonButton
+                            x:Name="btnFullScreen"
+                            Grid.Column="0"
+                            Click="btnFullScreen_Click"
+                            Visibility="Collapsed" />
+                        <ribbon:RibbonButton
+                            x:Name="btnDeleteScriptFile"
+                            Grid.Column="0"
+                            Click="btnDeleteScriptFile_Click"
+                            SmallImageSource="{StaticResource QuickAccessToolBarDelete}"
+                            ToolTip="Delete the script file from the working directory"
+                            Visibility="Collapsed" />
+                        <ribbon:RibbonButton
+                            x:Name="btnRefreshResults"
+                            Grid.Column="1"
+                            Click="btnRefreshResults_Click"
+                            SmallImageSource="{StaticResource QuickAccessToolBarRefresh}"
+                            ToolTipDescription="Click to refresh the results of the script"
+                            ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                            ToolTipTitle="Refresh results (F5)" />
+                        <ribbon:RibbonButton
+                            x:Name="btnSaveResults"
+                            Grid.Column="2"
+                            Click="btnSaveResults_Click"
+                            SmallImageSource="{StaticResource QuickAccessToolBarSave}"
+                            ToolTipDescription="Click to save the results to a csv file"
+                            ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                            ToolTipTitle="Save results (F10)" />
+                    </Grid>
+                </ribbon:RibbonQuickAccessToolBar>
+            </ribbon:Ribbon.QuickAccessToolBar>
+
+            <ribbon:Ribbon.HelpPaneContent>
+                <ribbon:RibbonButton
+                    x:Name="btnHelpButton"
+                    Margin="0,0,10,0"
+                    Click="mnuHowTo_Click"
+                    SmallImageSource="{StaticResource HelpPaneContent}"
+                    ToolTipDescription="Click to open the help file for this application"
+                    ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                    ToolTipTitle="Show Help (F1)" />
+            </ribbon:Ribbon.HelpPaneContent>
+
+            <ribbon:Ribbon.ApplicationMenu>
+                <ribbon:RibbonApplicationMenu SmallImageSource="{StaticResource ApplicationMenuIcon}">
+                    <ribbon:RibbonApplicationMenuItem
+                        x:Name="mnuAbout"
+                        Click="mnuAbout_Click"
+                        Header="About"
+                        ImageSource="{StaticResource ApplicationMenuAbout}"
+                        ToolTipDescription="A form to view the copyright and version of the application."
+                        ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=ImageSource}"
+                        ToolTipTitle="About This Application" />
+                    <ribbon:RibbonApplicationMenuItem
+                        x:Name="mnuHowTo"
+                        Click="mnuHowTo_Click"
+                        Header="How To..."
+                        ImageSource="{StaticResource ApplicationMenuHelp}"
+                        ToolTipDescription="A help system (sometimes called a help file) is a documentation component of a software program that explains the features of the program and helps the user understand its capabilities."
+                        ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=ImageSource}"
+                        ToolTipTitle="How To Documentation (F1)" />
+                    <ribbon:RibbonApplicationMenuItem
+                        x:Name="mnuApiDoc"
+                        Click="mnuApiDoc_Click"
+                        Header="API Doc..."
+                        ImageSource="{StaticResource ApplicationMenuApi}"
+                        ToolTipDescription="API (Application Programming Interface) documentation, also known as programmers documentation, is a deliverable of technical writing in which a technical writer develops instructions about how to effectively use a software API, hardware (SCPIs) or web-API."
+                        ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=ImageSource}"
+                        ToolTipTitle="API Documentation" />
+                    <ribbon:RibbonApplicationMenuItem
+                        x:Name="mnuSettings"
+                        Click="mnuSettings_Click"
+                        Header="Settings"
+                        ImageSource="{StaticResource ApplicationMenuSettings}"
+                        ToolTipDescription="In this applicaiton, the settings configure the parameters and initial values for the software to run. This form allows you to modify, and view the values."
+                        ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=ImageSource}"
+                        ToolTipTitle="Application Settings" />
+                    <ribbon:RibbonApplicationMenu.FooterPaneContent>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel
+                                Grid.Column="0"
+                                HorizontalAlignment="Left"
+                                Orientation="Horizontal">
+                                <ribbon:RibbonButton
+                                    x:Name="btnCopyCommandLine"
+                                    Width="65"
+                                    Click="btnCopyCommandLine_Click"
+                                    Label="  Copy  "
+                                    SmallImageSource="{StaticResource QuickAccessToolBarCopy}"
+                                    ToolTipDescription="Click to copy the command line script"
+                                    ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                                    ToolTipTitle="Copy command (F7)" />
+                            </StackPanel>
+                            <ribbon:RibbonButton
+                                Grid.Column="2"
+                                Width="65"
+                                HorizontalAlignment="Right"
+                                Command="ApplicationCommands.Close"
+                                Label="  Exit  "
+                                SmallImageSource="{StaticResource ApplicationMenuExit}" />
+                        </Grid>
+                    </ribbon:RibbonApplicationMenu.FooterPaneContent>
+                </ribbon:RibbonApplicationMenu>
+
+            </ribbon:Ribbon.ApplicationMenu>
+
+            <ribbon:RibbonTab x:Name="HomeTab" Header="  Home  ">
+                <ribbon:RibbonGroup
+                    x:Name="grpCmdExecute"
+                    Header="Execute"
+                    Style="{StaticResource MyRibbonGroup}">
+                    <ribbon:RibbonButton
+                        x:Name="btnRunCmd"
+                        Click="btnRunCmd_Click"
+                        Label="Run"
+                        LargeImageSource="{StaticResource RibbonButtonRun}"
+                        Style="{StaticResource MyRibbonButtonLarge}"
+                        ToolTipDescription="Click to run the selected script file"
+                        ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=LargeImageSource}"
+                        ToolTipTitle="Run script" />
+                </ribbon:RibbonGroup>
+                <ribbon:RibbonGroup
+                    x:Name="grpFunctionalAccount"
+                    Header="Functional Account"
+                    LargeImageSource="{StaticResource RibbonGroupDocumentum}"
+                    Style="{StaticResource MyRibbonGroup}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock
+                            x:Name="lblUserName"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="User Name: " />
+                        <ribbon:RibbonTextBox
+                            x:Name="txtUserName"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            SelectionChanged="BuildScriptTextbox"
+                            Style="{StaticResource MyRibbonTextBox}"
+                            Text="{Binding Source={x:Static properties:Settings.Default}, Path=Script_Functional_UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            ToolTipDescription="Enter the administrator or functional account name"
+                            ToolTipImageSource="{StaticResource RibbonGroupDocumentum}"
+                            ToolTipTitle="Enter user name" />
+                        <TextBlock
+                            x:Name="lblPassword"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Password: " />
+                        <PasswordBox
+                            Name="txtPassword"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            PasswordChanged="txtPassword_PasswordChanged"
+                            Style="{StaticResource MyPasswordBox}" />
+                    </Grid>
+                </ribbon:RibbonGroup>
+                <ribbon:RibbonGroup
+                    x:Name="grpScriptOptions"
+                    Header="Script Options"
+                    LargeImageSource="{StaticResource RibbonGroupDocumentum}"
+                    Style="{StaticResource MyRibbonGroup}">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock
+                            x:Name="lblScriptType"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Script Type: " />
+                        <ribbon:RibbonComboBox
+                            x:Name="cboCodeType"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            ItemsSource="{Binding}"
+                            Style="{StaticResource MyRibbonComboBox}"
+                            ToolTipDescription="The type of script to run"
+                            ToolTipImageSource="{StaticResource RibbonGroupDocumentum}"
+                            ToolTipTitle="Select a script type">
+                            <ribbon:RibbonGallery
+                                x:Name="cboCodeTypeGallery"
+                                MaxColumnCount="1"
+                                SelectedValue="{Binding Source={x:Static properties:Settings.Default}, Path=Script_CodeType, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                SelectedValuePath="CodeTypeName"
+                                SelectionChanged="BuildScriptCombobox">
+                                <ribbon:RibbonGalleryCategory x:Name="cboCodeTypeGalleryCategory" ItemsSource="{Binding}">
+                                    <ribbon:RibbonGalleryCategory.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <StackPanel x:Name="cboCodeTypeGalleryStackPanel" Orientation="Horizontal">
+                                                    <TextBlock x:Name="txtCodeTypeName" Text="{Binding Path=CodeTypeName}" />
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ribbon:RibbonGalleryCategory.ItemTemplate>
+                                </ribbon:RibbonGalleryCategory>
+                            </ribbon:RibbonGallery>
+                        </ribbon:RibbonComboBox>
+                        <ribbon:RibbonButton
+                            x:Name="btnOpenFormCodeType"
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            Click="btnOpenFormCodeType_Click"
+                            Style="{StaticResource MyRibbonButtonBuild}"
+                            Tag="CodeType"
+                            ToolTip="Open a form to edit the code type list" />
+                        <TextBlock
+                            x:Name="lblDocbaseName"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Docbase:" />
+                        <ribbon:RibbonComboBox
+                            x:Name="cboDocbase"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            ItemsSource="{Binding}"
+                            Style="{StaticResource MyRibbonComboBox}"
+                            ToolTipDescription="The docbase name the script will run against"
+                            ToolTipImageSource="{StaticResource RibbonGroupDocumentum}"
+                            ToolTipTitle="Select a docbase name">
+                            <ribbon:RibbonGallery
+                                x:Name="cboDocbaseGallery"
+                                MaxColumnCount="1"
+                                SelectedValue="{Binding Source={x:Static properties:Settings.Default}, Path=Script_Docbase, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                SelectedValuePath="DocbaseName"
+                                SelectionChanged="BuildScriptCombobox">
+                                <ribbon:RibbonGalleryCategory x:Name="cboDocbaseGalleryCategory" ItemsSource="{Binding}">
+                                    <ribbon:RibbonGalleryCategory.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <StackPanel x:Name="cboDocbaseGalleryStackPanel" Orientation="Horizontal">
+                                                    <TextBlock x:Name="txtDocbaseName" Text="{Binding Path=DocbaseName}" />
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ribbon:RibbonGalleryCategory.ItemTemplate>
+                                </ribbon:RibbonGalleryCategory>
+                            </ribbon:RibbonGallery>
+                        </ribbon:RibbonComboBox>
+                        <ribbon:RibbonButton
+                            x:Name="btnOpenFormDocbase"
+                            Grid.Row="1"
+                            Grid.Column="3"
+                            Click="btnOpenFormDocbase_Click"
+                            Style="{StaticResource MyRibbonButtonBuild}"
+                            Tag="Docbase"
+                            ToolTip="Open a form to edit the docbase list" />
+                    </Grid>
+                </ribbon:RibbonGroup>
+                <ribbon:RibbonGroup
+                    x:Name="grpFileLocations"
+                    Header="File Locations"
+                    LargeImageSource="{StaticResource RibbonGroupDocumentum}"
+                    Style="{StaticResource MyRibbonGroup}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                            <RowDefinition Style="{StaticResource MyGridRowDefinition}" />
+                        </Grid.RowDefinitions>
+                        <TextBlock
+                            x:Name="lblScriptFile"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Script File: " />
+                        <ribbon:RibbonButton
+                            x:Name="btnSelectScriptFile"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Height="Auto"
+                            Click="btnSelectScriptFile_Click"
+                            SmallImageSource="{StaticResource RibbonButtonOpen}"
+                            Style="{StaticResource MyRibbonButtonSmall}"
+                            ToolTipDescription="Click to select a script file"
+                            ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                            ToolTipTitle="Select file (F3)" />
+                        <TextBlock
+                            x:Name="lblWorkingDirectory"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Text="Working Directory: " />
+                        <ribbon:RibbonTextBox
+                            x:Name="txtScriptFile"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            SelectionChanged="BuildScriptTextbox"
+                            Style="{StaticResource MyRibbonTextBoxFile}"
+                            Text="{Binding Source={x:Static properties:Settings.Default}, Path=Script_PathCodeFile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <ribbon:RibbonButton
+                            x:Name="btnOpenScriptFile"
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            Click="btnOpenScriptFile_Click"
+                            Style="{StaticResource MyRibbonButtonBuild}"
+                            ToolTip="Open the script file" />
+                        <ribbon:RibbonButton
+                            x:Name="btnSelectResultsFile"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Height="20"
+                            Margin="1,1,1,0"
+                            VerticalAlignment="Top"
+                            Click="btnSelectResultsFile_Click"
+                            SmallImageSource="{StaticResource RibbonButtonOpen}"
+                            ToolTipDescription="Click to select a results file"
+                            ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                            ToolTipTitle="Select file" />
+                        <TextBlock
+                            x:Name="lblResultsFile"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Text="Results File: " />
+                        <ribbon:RibbonTextBox
+                            x:Name="txtResultsFile"
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Margin="0,1"
+                            HorizontalAlignment="Right"
+                            SelectionChanged="BuildScriptTextbox"
+                            Style="{StaticResource MyRibbonTextBoxFile}"
+                            Text="{Binding Source={x:Static properties:Settings.Default}, Path=Script_PathResultsFile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <ribbon:RibbonButton
+                            x:Name="btnOpenResultsFile"
+                            Grid.Row="1"
+                            Grid.Column="3"
+                            Click="btnOpenResultsFile_Click"
+                            Style="{StaticResource MyRibbonButtonBuild}"
+                            ToolTip="Open the results file" />
+                        <ribbon:RibbonButton
+                            x:Name="btnSelectWorkingDirectory"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Height="Auto"
+                            Margin="1"
+                            Click="btnSelectWorkingDirectory_Click"
+                            SmallImageSource="{StaticResource RibbonButtonOpen}"
+                            ToolTipDescription="Click to select the working directory"
+                            ToolTipImageSource="{Binding RelativeSource={RelativeSource Self}, Path=SmallImageSource}"
+                            ToolTipTitle="Select directory" />
+                        <ribbon:RibbonTextBox
+                            x:Name="txtWorkingDirectory"
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            SelectionChanged="BuildScriptTextbox"
+                            Style="{StaticResource MyRibbonTextBoxFile}"
+                            Text="{Binding Source={x:Static properties:Settings.Default}, Path=Script_WorkingDirectory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <ribbon:RibbonButton
+                            x:Name="btnOpenWorkingDirectory"
+                            Grid.Row="2"
+                            Grid.Column="3"
+                            Click="btnOpenWorkingDirectory_Click"
+                            Style="{StaticResource MyRibbonButtonBuild}"
+                            ToolTip="Open the working directory" />
+                    </Grid>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+
+        </ribbon:Ribbon>
+
+        <DataGrid
+            x:Name="dgvSourceFiles"
+            Grid.Row="1"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            CanUserDeleteRows="True"
+            CanUserReorderColumns="True"
+            CanUserResizeColumns="False"
+            CanUserSortColumns="False"
+            IsReadOnly="True"
+            ItemsSource="{Binding}"
+            LoadingRow="dgvSourceFiles_LoadingRow"
+            Style="{StaticResource MyDataGrid}">
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="FontSize" Value="12" />
+                    <Setter Property="FontFamily" Value="Courier New" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                    <Setter Property="VerticalAlignment" Value="Center" />
+
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="0">
+                            <Setter Property="Background" Value="LightCoral" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="Auto"
+                    MinWidth="50"
+                    Binding="{Binding Path=Status, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Header="Results" />
+                <DataGridTextColumn
+                    Width="*"
+                    MinWidth="200"
+                    Binding="{Binding Path=CodeLine, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Header="Script Line" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StatusBar
+            x:Name="StatusBar"
+            Grid.Row="2"
+            VerticalAlignment="Bottom"
+            BorderBrush="Gray"
+            BorderThickness="1">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="DarkGray" Text="© " />
+                    <!--<Image
+                        Width="16"
+                        Height="16"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="{StaticResource StatusBarLogo}" />-->
+                </StackPanel>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="1">
+                <TextBlock x:Name="StatusBarTextCompanyName" />
+            </StatusBarItem>
+
+            <Separator
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                Width="1"
+                HorizontalAlignment="Center" />
+            <StatusBarItem Grid.Column="3">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock
+                        x:Name="lblProgressStatus"
+                        Padding="5,3,5,1"
+                        Text="Status:" />
+                    <Grid>
+                        <ProgressBar
+                            x:Name="barBatchProgress"
+                            Width="100"
+                            Height="18"
+                            FontWeight="Bold"
+                            Foreground="DarkGray"
+                            Maximum="100"
+                            Minimum="0"
+                            Value="0" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="Black"
+                            Text="{Binding ElementName=barBatchProgress, Path=Value, StringFormat={}{0:0}%}" />
+                    </Grid>
+                </StackPanel>
+            </StatusBarItem>
+            <Separator
+                Grid.Column="6"
+                Grid.ColumnSpan="1"
+                Width="1"
+                HorizontalAlignment="Center" />
+            <StatusBarItem Grid.Column="7">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Image
+                        Width="16"
+                        Height="16"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="{StaticResource StatusBarError}" />
+                    <TextBlock
+                        x:Name="lblErrorLines"
+                        Padding="5,3,5,1"
+                        Text="Error Lines:" />
+                    <TextBox
+                        x:Name="txtErrorLines"
+                        Padding="5,1,5,1"
+                        IsEnabled="False" />
+                </StackPanel>
+            </StatusBarItem>
+            <Separator
+                Grid.Column="8"
+                Grid.ColumnSpan="1"
+                Width="1"
+                HorizontalAlignment="Center" />
+            <StatusBarItem Grid.Column="9">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Image
+                        Width="16"
+                        Height="16"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="{StaticResource StatusBarResult}" />
+                    <TextBlock
+                        x:Name="lblResultLines"
+                        Padding="5,3,5,1"
+                        Text="Result Lines:" />
+                    <TextBox
+                        x:Name="txtResultLines"
+                        Padding="5,1,5,1"
+                        IsEnabled="False" />
+                </StackPanel>
+            </StatusBarItem>
+            <Separator
+                Grid.Column="10"
+                Grid.ColumnSpan="1"
+                Width="1"
+                HorizontalAlignment="Center" />
+            <StatusBarItem Grid.Column="11">
+                <StackPanel
+                    Margin="0,0,15,0"
+                    HorizontalAlignment="Stretch"
+                    Orientation="Horizontal">
+                    <Image
+                        Width="16"
+                        Height="16"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Source="{StaticResource StatusBarScript}" />
+                    <TextBlock
+                        x:Name="lblScriptLines"
+                        Padding="5,3,5,1"
+                        Text="Script Lines:" />
+                    <TextBox
+                        x:Name="txtScriptLines"
+                        Padding="5,1,5,1"
+                        IsEnabled="False" />
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+
+</ribbon:RibbonWindow>

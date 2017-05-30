@@ -1,0 +1,144 @@
+﻿<Application
+    x:Class="DocScript.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <BitmapImage x:Key="ApplicationIcon" UriSource="Images/App.ico" />
+        <BitmapImage x:Key="ApplicationMenuAbout" UriSource="Images/32x32/About.png" />
+        <BitmapImage x:Key="ApplicationMenuApi" UriSource="Images/32x32/Api.png" />
+        <BitmapImage x:Key="ApplicationMenuExit" UriSource="Images/16x16/Exit.png" />
+        <BitmapImage x:Key="ApplicationMenuHelp" UriSource="Images/32x32/Help.png" />
+        <BitmapImage x:Key="ApplicationMenuIcon" UriSource="Images/16x16/AppMenu.png" />
+        <BitmapImage x:Key="ApplicationMenuSettings" UriSource="Images/32x32/Settings.png" />
+        <BitmapImage x:Key="ApplicationMenuSettingsSmall" UriSource="Images/16x16/Settings.png" />
+        <BitmapImage x:Key="HelpPaneContent" UriSource="Images/16x16/Help.png" />
+        <BitmapImage x:Key="QuickAccessToolBarCopy" UriSource="Images/16x16/Copy.png" />
+        <BitmapImage x:Key="QuickAccessToolBarDelete" UriSource="Images/16x16/Delete.png" />
+        <BitmapImage x:Key="QuickAccessToolBarRefresh" UriSource="Images/16x16/Refresh.png" />
+        <BitmapImage x:Key="QuickAccessToolBarSave" UriSource="Images/16x16/Save.png" />
+        <BitmapImage x:Key="RibbonButtonOpen" UriSource="Images/16x16/Open.png" />
+        <BitmapImage x:Key="RibbonButtonRun" UriSource="Images/32x32/Run.png" />
+        <BitmapImage x:Key="RibbonGroupDocumentum" UriSource="Images/32x32/Documentum.png" />
+        <BitmapImage x:Key="StatusBarError" UriSource="Images/16x16/Error.png" />
+        <BitmapImage x:Key="StatusBarLogo" UriSource="Images/16x16/Logo.png" />
+        <BitmapImage x:Key="StatusBarResult" UriSource="Images/16x16/Result.png" />
+        <BitmapImage x:Key="StatusBarScript" UriSource="Images/16x16/Script.png" />
+
+        <!--  Resources scoped at the Application level should be defined here.  -->
+        <!--  Border  -->
+        <Style x:Key="MyControlBorder" TargetType="{x:Type Border}">
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value=".75" />
+        </Style>
+
+        <!--  Grid  -->
+        <Style x:Key="MyGridRowDefinition" TargetType="RowDefinition">
+            <Setter Property="Height" Value="22" />
+        </Style>
+
+        <!--  RibbonTextBox and PasswordBox Style  -->
+        <Style x:Key="MyControlInputBox" TargetType="Control">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Control}">
+                        <Border>
+                            <Border Name="Border" Style="{StaticResource MyControlBorder}">
+                                <ScrollViewer x:Name="PART_ContentHost" />
+                            </Border>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--  TextBox  -->
+        <Style x:Key="MyTextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Width" Value="290" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="IsReadOnly" Value="True" />
+        </Style>
+
+        <!--  RibbonTextBox  -->
+        <Style
+            x:Key="MyRibbonTextBox"
+            BasedOn="{StaticResource MyControlInputBox}"
+            TargetType="{x:Type ribbon:RibbonTextBox}">
+            <Setter Property="Width" Value="115" />
+        </Style>
+
+        <!--  RibbonTextBox for file locations  -->
+        <Style
+            x:Key="MyRibbonTextBoxFile"
+            BasedOn="{StaticResource MyControlInputBox}"
+            TargetType="{x:Type ribbon:RibbonTextBox}">
+            <Setter Property="Width" Value="250" />
+            <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+        </Style>
+
+        <!--  PasswordBox  -->
+        <Style
+            x:Key="MyPasswordBox"
+            BasedOn="{StaticResource MyControlInputBox}"
+            TargetType="{x:Type PasswordBox}" />
+
+        <!--  RibbonComboBox  -->
+        <Style x:Key="MyRibbonComboBox" TargetType="{x:Type ribbon:RibbonComboBox}">
+            <Setter Property="Height" Value="21" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="IsEditable" Value="False" />
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="SelectionBoxWidth" Value="150" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value=".75" />
+        </Style>
+
+        <!--  RibbonGroup  -->
+        <Style x:Key="MyRibbonGroup" TargetType="{x:Type ribbon:RibbonGroup}">
+            <Setter Property="Height" Value="86" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+        <!--  RibbonButton  -->
+        <Style x:Key="MyRibbonButtonSmall" TargetType="{x:Type ribbon:RibbonButton}">
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Margin" Value="1" />
+        </Style>
+
+        <!--  RibbonButton  -->
+        <Style x:Key="MyRibbonButtonLarge" TargetType="{x:Type ribbon:RibbonButton}">
+            <Setter Property="Width" Value="55" />
+        </Style>
+
+        <!--  RibbonButton Build  -->
+        <Style
+            x:Key="MyRibbonButtonBuild"
+            BasedOn="{StaticResource MyRibbonButtonSmall}"
+            TargetType="{x:Type ribbon:RibbonButton}">
+            <Setter Property="Label" Value="... " />
+        </Style>
+
+        <!--  DataGrid  -->
+        <Style x:Key="MyDataGrid" TargetType="{x:Type DataGrid}">
+            <Setter Property="HorizontalGridLinesBrush" Value="Gainsboro" />
+            <Setter Property="VerticalGridLinesBrush" Value="Gainsboro" />
+            <Setter Property="GridLinesVisibility" Value="All" />
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="AlternatingRowBackground" Value="WhiteSmoke" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+    </Application.Resources>
+
+</Application>
