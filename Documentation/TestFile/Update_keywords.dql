@@ -1,0 +1,215 @@
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80062eed'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8006162d'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8006162f'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061631'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061633'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061635'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061637'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061645'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061647'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061649'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8006164b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800636f0'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800615a5'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800648c0'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a801540e6'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800608ee'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800608f6'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e45'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800c47f2'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800c47f1'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fbed'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005f98a'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fdb7'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fcbe'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fcc1'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fcc5'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fcd0'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fcd1'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fce1'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80060905'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fecd'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800c472c'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fba3'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fb89'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fb9b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80060061'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c14'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c15'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c16'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c17'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c18'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c19'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c1b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c1c'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c1d'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c23'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c24'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c26'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c27'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c28'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c2a'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c2b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c2e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c30'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c31'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c32'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c33'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c34'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c35'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c37'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c38'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c3a'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c3b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c3c'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c3e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c3f'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c40'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c41'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c43'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c46'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c48'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c49'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c4b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061c50'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061de9'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061dea'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061deb'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061dfa'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061dfe'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e0a'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e0c'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e0e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e10'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e12'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e16'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e17'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e1b'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e1e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e20'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e24'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e26'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e29'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e2a'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e2d'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e2e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e2f'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e53'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e54'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e57'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e58'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061e5f'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061f3e'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a80061f4f'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800ca208'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800d04d7'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a800d04dd'
+GO 
+UPDATE dm_document objects SET keywords = 'D' WHERE r_object_id = '09027b7a8005fe29'
+GO 
+
