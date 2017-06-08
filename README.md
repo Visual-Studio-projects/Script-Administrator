@@ -48,3 +48,27 @@ Listed below is the detailed functionality of this application and its component
 * This is the file that is created after the script file is run.  Unless the path to this file is indicated the default path is the working directory.
 ###	Working Directory
 * This is the location of the script type e.g. idql64.exe, iapi64.exe
+
+##	Quick Access ToolBar
+The following are all functions of the quick access toolbar.
+ 
+###	Refresh
+* This refreshes the results column from the results file in the datagrid
+### Save
+* This saves the grid to a csv file
+
+## Application Menu
+The following are all functions of the application menu.
+ 
+###	About
+* The about form 
+###	How To…
+* Opens the as built documentation.
+###	API Doc…
+* Opens the API documentation.
+###	Settings
+* All the dropdown lists and default values are stored here and can be edited.
+###	Copy
+* Copies the command line script
+###	Exit
+* Closes the application.
