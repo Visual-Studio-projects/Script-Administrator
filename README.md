@@ -32,19 +32,19 @@ Listed below is the detailed functionality of this application and its component
 
 ## Main Form
 ###	Run
-•	This button will first copy the script from the script file directory to the working directory.  Then it will execute the script file.
+* This button will first copy the script from the script file directory to the working directory.  Then it will execute the script file.
 ###	User Name
-•	This account must be an administrator in Documentum.
+* This account must be an administrator in Documentum.
 ###	Password
-•	The password for the administrator in Documentum
+* The password for the administrator in Documentum
 ###	Script Type
-•	This is the type of script you can run.  i.e. idql32.exe for a 32 bit machine and idql64 for a 64 bit machine.
+* This is the type of script you can run.  i.e. idql32.exe for a 32 bit machine and idql64 for a 64 bit machine.
 ###	Docbase
-•	A specific docbase must be selected
+* A specific docbase must be selected
 ###	Script File
-•	This file contains one or more than one script files.  It has to be copied to the working directory to run.
-•	The script file can not have any spaces in the file name
+* This file contains one or more than one script files.  It has to be copied to the working directory to run.
+* The script file can not have any spaces in the file name
 ###	Results File
-•	This is the file that is created after the script file is run.  Unless the path to this file is indicated the default path is the working directory.
+* This is the file that is created after the script file is run.  Unless the path to this file is indicated the default path is the working directory.
 ###	Working Directory
-•	This is the location of the script type e.g. idql64.exe, iapi64.exe
+* This is the location of the script type e.g. idql64.exe, iapi64.exe
