@@ -1,5 +1,5 @@
 # DocumentumScript
-This Documentum scripting tool was created in Visual Studio 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool.
+This Documentum scripting tool was created in Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool.
 
 
 <h1 align="center">
@@ -12,7 +12,7 @@ This application was created to help with scripting Documentum databases.  Multi
 ## Dependencies
 |Software                        |Dependency                 |
 |:-------------------------------|:--------------------------|
-|[Microsoft Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
+|[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
 |[Microsoft SQL Server CE 3.5](https://www.microsoft.com/en-au/download/details.aspx?id=5783)|Database|
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
 |[Word Processor](https://www.libreoffice.org/)|As Built documentation|
