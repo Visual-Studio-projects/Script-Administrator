@@ -14,6 +14,9 @@ namespace DocScript.Forms
     public partial class TableView : Window
     {
 
+		/// <summary>
+		/// 
+		/// </summary>
         public TableView()
         {
             try
