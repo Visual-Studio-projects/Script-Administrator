@@ -22,7 +22,6 @@ This application was created to help with scripting Documentum databases.  Multi
 |[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
 |[Microsoft SQL Server CE 3.5](https://www.microsoft.com/en-au/download/details.aspx?id=5783)|Database|
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
-|[Word Processor](https://www.libreoffice.org/)|As Built documentation|
 
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
