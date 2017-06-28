@@ -1,14 +1,21 @@
-# DocumentumScript
+# Documentum Script Administrator
 This Documentum scripting tool was created in Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool.
-
 
 <h1 align="center">
   <img src="Images/main_form.png" alt="MyApp" />
 </h1>
 
+## Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#dependencies">Dependencies</a>
+- <a href="#glossary-of-terms">Glossary of Terms</a>
+- <a href="#functionality">Functionality</a>
+
+<a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"> </a>
 ## Overview
 This application was created to help with scripting Documentum databases.  Multiple scripts can be contained in one file then run as one command. This application must be run on the Documentum Content Server in order to work properly.
 
+<a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"> </a>
 ## Dependencies
 |Software                        |Dependency                 |
 |:-------------------------------|:--------------------------|
@@ -17,6 +24,7 @@ This application was created to help with scripting Documentum databases.  Multi
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
 |[Word Processor](https://www.libreoffice.org/)|As Built documentation|
 
+<a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
 
 | Term                      | Meaning                                                                                  |
@@ -27,6 +35,7 @@ This application was created to help with scripting Documentum databases.  Multi
 |idql |A scripting application for DQL located in the working directory on the content server| 
 |iapi |A scripting application for API located in the working directory on the content server|
 
+<a id="user-content-functionality" class="anchor" href="#functionality" aria-hidden="true"> </a>
 ## Functionality
 Listed below is the detailed functionality of this application and its components.  
 
