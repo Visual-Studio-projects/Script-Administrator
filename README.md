@@ -22,8 +22,11 @@ This application was created to help with scripting Documentum databases.  Multi
 |Software                        |Dependency                 |
 |:-------------------------------|:--------------------------|
 |[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
+|[Microsoft Ribbon for WPF](https://www.microsoft.com/en-us/download/details.aspx?id=11877)|Project|
 |[Microsoft SQL Server CE 3.5](https://www.microsoft.com/en-au/download/details.aspx?id=5783)|Database|
+|[SQL Server Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)|Database|
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
+|[Log4Net](https://www.nuget.org/packages/log4net/) |Error Logging |
 
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
