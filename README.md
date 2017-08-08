@@ -27,6 +27,7 @@ This application was created to help with scripting Documentum databases.  Multi
 |[SQL Server Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)|Database|
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
 |[Log4Net](https://www.nuget.org/packages/log4net/) |Error Logging |
+|[Documentum](http://documentum.opentext.com/documentum/)|Script|
 
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
