@@ -28,6 +28,7 @@ This application was created to help with scripting Documentum databases.  Multi
 |[Sandcastle](https://github.com/EWSoftware/SHFB)|API documentation|
 |[Log4Net](https://www.nuget.org/packages/log4net/) |Error Logging |
 |[Documentum](http://documentum.opentext.com/documentum/)|Script|
+|[www.IconArchive.com](http://www.iconarchive.com/show/silk-icons-by-famfamfam.html)|Icons|
 
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
