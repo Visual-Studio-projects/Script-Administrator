@@ -1,21 +1,16 @@
 <img align="left" src="Images/App.ico" width="64px" >
 
 # Documentum Script Administrator
-This Documentum scripting tool was created in Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool.
+This Documentum scripting tool was created in Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool. It was created to help with scripting Documentum databases. This application must be run on the Documentum Content Server in order to work properly.
 
 <h1 align="center">
   <img src="Images/ReadMe/DocScriptMainForm.png" alt="MyApp" />
 </h1>
 
 ## Table of Contents
-- <a href="#overview">Overview</a>
 - <a href="#dependencies">Dependencies</a>
 - <a href="#glossary-of-terms">Glossary of Terms</a>
 - <a href="#functionality">Functionality</a>
-
-<a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"> </a>
-## Overview
-This application was created to help with scripting Documentum databases.  Multiple scripts can be contained in one file then run as one command. This application must be run on the Documentum Content Server in order to work properly.
 
 <a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"> </a>
 ## Dependencies
