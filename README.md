@@ -1,6 +1,9 @@
 <img align="left" src="Images/App.ico" width="64px" >
 
 # Documentum Script Administrator
+
+![current_build WebTop_6.7](https://img.shields.io/badge/current_build-WebTop_6.7-red.svg)
+
 This Documentum scripting tool was created in Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool. It was created to help with scripting Documentum databases. This application must be run on the Documentum Content Server in order to work properly.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © 2017 Anthony Duguid")
