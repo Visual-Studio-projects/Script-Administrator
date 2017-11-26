@@ -1,4 +1,4 @@
-<img align="left" src="Images/App.ico" width="64px" >
+<img align="left" src="CS/Images/App.ico" width="64px" >
 
 # Documentum Script Administrator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © 2017 Anthony Duguid")
