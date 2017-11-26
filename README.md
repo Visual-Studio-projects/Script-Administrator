@@ -7,7 +7,7 @@
 This Documentum scripting tool was created in Microsoft Visual Studio Community 2017 C#/WPF Ribbon. Multiple scripts can be contained in one file then run as one command against the idql32/64. It then refreshes the grid with the results file that is created by the idql tool. It was created to help with scripting Documentum databases. This application must be run on the Documentum Content Server in order to work properly.
 
 <h1 align="center">
-  <img src="Images/ReadMe/DocScriptMainForm.png" alt="MyApp" />
+  <img src="CS/Images/ReadMe/DocScriptMainForm.png" alt="MyApp" />
 </h1>
 
 ## Table of Contents
