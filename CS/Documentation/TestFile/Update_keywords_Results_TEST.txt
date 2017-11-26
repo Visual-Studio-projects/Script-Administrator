@@ -1,0 +1,440 @@
+
+
+	EMC Documentum idql - Interactive document query interface
+	(c) Copyright EMC Corp., 1992 - 2011
+	All rights reserved.
+	Client Library Release 6.7.1150.0147
+
+
+Connecting to Server using docbase TEST
+
+Connected to Documentum Server running Release 6.7.1150.0241  Win64.Oracle
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              0
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> objects_updated
+---------------
+              1
+(1 row affected)
+1> 2> 
