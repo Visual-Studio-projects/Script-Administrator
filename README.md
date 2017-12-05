@@ -10,10 +10,14 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
   <img src="CS/Images/ReadMe/DocScriptMainForm.png" alt="MyApp" />
 </h1>
 
+<br>
+
 ## Table of Contents
 - <a href="#dependencies">Dependencies</a>
 - <a href="#glossary-of-terms">Glossary of Terms</a>
 - <a href="#functionality">Functionality</a>
+
+<br>
 
 <a id="user-content-dependencies" class="anchor" href="#dependencies" aria-hidden="true"> </a>
 ## Dependencies
@@ -28,6 +32,8 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
 |[Documentum](http://documentum.opentext.com/documentum/)|Script|
 |[www.IconArchive.com](http://www.iconarchive.com/show/silk-icons-by-famfamfam.html)|Icons|
 
+<br>
+
 <a id="user-content-glossary-of-terms" class="anchor" href="#glossary-of-terms" aria-hidden="true"> </a>
 ## Glossary of Terms
 
@@ -38,6 +44,8 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
 |API |Application Programming Interface|
 |idql |A scripting application for DQL located in the working directory on the content server| 
 |iapi |A scripting application for API located in the working directory on the content server|
+
+<br>
 
 <a id="user-content-functionality" class="anchor" href="#functionality" aria-hidden="true"> </a>
 ## Functionality
