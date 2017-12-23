@@ -42,10 +42,11 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
 | Term                      | Meaning                                                                                  |
 |:--------------------------|:-----------------------------------------------------------------------------------------|
 |DocScript |Documentum Script Administrator|
-|DQL |Documentum Query Language|
-|API |Application Programming Interface|
+|DQL |Documentum Query Language is used to query Documentum which is a content management system used to create, manage, deliver, and archive all types of content from text documents and spreadsheets to digital images, HTML, and XML components. DQL uses syntax that is a superset of ANSI-standard SQL (Structured Query Language) DQL statements operate on objects and sometimes on tables/rows but SQL statements operate only on tables/rows. Part of DQL statements are translated automatically into SQL before being executed by the eContent Server|
+|API |Application Programming Interface is a collection of methods prescribed by an application program by which another application can send requests to it. For example, Server API methods are executed by the Documentum Desktop to access the Content Server|
 |idql |A scripting application for DQL located in the working directory on the content server| 
 |iapi |A scripting application for API located in the working directory on the content server|
+|WPF|Windows Presentation Foundation (or WPF) is a graphical subsystem by Microsoft for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0 in 2006. WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG. WPF employs XAML, an XML-based language, to define and link various interface elements.[1] WPF applications can be deployed as standalone desktop programs or hosted as an embedded object in a website. WPF aims to unify a number of common user interface elements, such as 2D/3D rendering, fixed and adaptive documents, typography, vector graphics, runtime animation, and pre-rendered media. These elements can then be linked and manipulated based on various events, user interactions, and data bindings.|
 
 <br>
 
