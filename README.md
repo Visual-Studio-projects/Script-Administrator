@@ -31,6 +31,8 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
 |[Log4Net](https://www.nuget.org/packages/log4net/) |Error Logging |
 |[Documentum](http://documentum.opentext.com/documentum/)|Script|
 |[www.IconArchive.com](http://www.iconarchive.com/show/silk-icons-by-famfamfam.html)|Icons|
+|[Snagit](http://discover.techsmith.com/snagit-non-brand-desktop/?gclid=CNzQiOTO09UCFVoFKgod9EIB3g)|Read Me|VBA, VSTO|
+|Badges ([Library](https://shields.io/), [Custom](https://rozaxe.github.io/factory/), [Star/Fork](http://githubbadges.com))|Read Me|VBA, VSTO|
 
 <br>
 
