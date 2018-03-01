@@ -1,6 +1,4 @@
-<img align="left" src="CS/Images/App.ico" width="64px" >
-
-# Documentum Script Administrator
+<img align="left" src="Images/ReadMe/header1.png">
 
 [![Join the chat at https://gitter.im/DocumentumScriptAdministrator/Lobby](https://badges.gitter.im/DocumentumScriptAdministrator/Lobby.svg)](https://gitter.im/DocumentumScriptAdministrator/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
