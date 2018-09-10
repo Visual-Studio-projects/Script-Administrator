@@ -1,6 +1,6 @@
 <img align="left" src="Images/ReadMe/header1.png">
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/AnthonyDuguid)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/AnthonyDuguid/1.00)
 [![Join the chat at https://gitter.im/DocumentumScriptAdministrator/Lobby](https://badges.gitter.im/DocumentumScriptAdministrator/Lobby.svg)](https://gitter.im/DocumentumScriptAdministrator/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
 [![Latest Release](https://img.shields.io/github/release/Documentum-projects/Script-Administrator.svg?label=latest%20release)](https://github.com/Documentum-projects/Script-Administrator/releases)
