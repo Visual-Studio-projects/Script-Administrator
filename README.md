@@ -26,7 +26,7 @@ This Documentum scripting tool was created in Microsoft Visual Studio Community 
 ## Dependencies
 |Software                        |Dependency                 |
 |:-------------------------------|:--------------------------|
-|[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|
+|[Microsoft Visual Studio Community](https://www.visualstudio.com/vs/whatsnew/)|Solution|
 |[Microsoft Ribbon for WPF](https://www.microsoft.com/en-us/download/details.aspx?id=11877)|Project|
 |[Microsoft SQL Server CE 3.5](https://www.microsoft.com/en-au/download/details.aspx?id=5783)|Database|
 |[SQL Server Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)|Database|
